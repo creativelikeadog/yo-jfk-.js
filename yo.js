@@ -290,21 +290,21 @@ var Yo = (function(window){
 
 	_extend(Yobject.prototype,Yo.prototype);
 
-	_Yo.holdYourShitNigga = function(time,fn){
-		return _core.holdYourShitNigga.call(_core,time,fn);
+	_Yo.wait = function(time,fn){
+		return _core.wait.call(_core,time,fn);
 	}
 
-	_Yo.bringThatMothafuckerNow = Yo.prototype.query;
+	_Yo.comeBack = Yo.prototype.query;
 
-	_Yo.listenNigga = function(event,callback){
+	_Yo.list = function(event,callback){
 		YoMediator.subscribe(_core,event,callback);
 		return _core;
 	}
-	_Yo.shootItUpNigga = function(event,data){
+	_Yo.publish = function(event,data){
 		YoMediator.publish(event,data);
 		return _core;
 	}
-	_Yo.pimpItUp = _extend;
+	_Yo.extendIt = _extend;
 
 	return _Yo;
 
